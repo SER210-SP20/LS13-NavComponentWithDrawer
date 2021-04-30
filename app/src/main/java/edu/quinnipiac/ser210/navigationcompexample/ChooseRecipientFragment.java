@@ -57,8 +57,6 @@ public class ChooseRecipientFragment extends Fragment implements View.OnClickLis
             case R.id.next_btn:
                 Bundle bundle = new Bundle();
                 TextInputEditText ed = ((TextInputEditText)getView().findViewById(R.id.input_recipient));
-                if (ed == null)
-                    Log.e("TextInputEdit","cannot find TextInputEdit");
                 String recipient = ed.getText().toString();
                 if (!recipient.isEmpty()) {
                     bundle.putString("recipient", recipient);
